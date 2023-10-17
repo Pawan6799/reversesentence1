@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript - 1</h1>
+    <script>
+        const str = "This is a sunny day";
+        const reverseSentence = (string) => {
+            const arr = str.split(" ");
+            const reverse = arr.map(ele => {
+                return ele.split('').reverse().join("");
+            });
+            return reverse.join(" ");
+        }
+        const ans = reverseSentence(str);
+        console.log(ans);  
+    </script>
+</body>
+
+</html>
